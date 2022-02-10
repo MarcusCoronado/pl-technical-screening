@@ -4,6 +4,7 @@ Overall Assumptions/Notes:
 - Assumed valid values will be passed in. Guard clauses and proper error handling are ideal in actual code
 - Output is written to the Console
 - We'll have to make do with manually editing the console's Program.cs or the unit tests for additional scenarios/testing
+- The Console project currently has the given examples as inputs
 
 <br>
 
@@ -68,8 +69,13 @@ Thoughts for improvement:
 
 ## Dev Notes and Running
 
-I recently built a new desktop and it doesn't have Visual Studio on it yet. I've been wanting to play around with developing smaller solutions in **VS Code and .Net 6**, so I took the opportunity. Please let me know if this is an issue. All commands below can be used in the VS Code terminal, or a terminal of your choice.
+I recently built a new desktop and it doesn't have Visual Studio on it yet. I've been wanting to play around with developing smaller solutions in **VS Code and .Net 6**, so I took the opportunity. All commands below can be used in the VS Code terminal, or a terminal of your choice. 
 
 To build: `dotnet build`  
 To run the console app: `dotnet run --project Console`  
 To run tests: `dotnet test AnswersTests/AnswersTests.csproj`
+
+Alternatively, you can open the solution with Visual Studio and build, run tests, and run the Console project from there as you normally would any other Visual Studio solution.
+
+**You will need .Net 6** if you don't already have it: https://dotnet.microsoft.com/download  
+Please let me know if that is a problem.
